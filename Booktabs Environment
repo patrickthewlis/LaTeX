@@ -1,0 +1,11 @@
+\begin{center}
+\begin{tabular}{@{}lcccccc@{}} \toprule % "@{}" is used to fill extra whitespace 
+		\multicolumn{1}{r}{} &
+		\multicolumn{5}{c}{\textbf{Strata}} & 
+		\multicolumn{1}{c}{\textbf{Total}} \\ \midrule
+	
+& 1 & 2 & 3 & 4 & 5 & Total\\	\cmidrule(r){2-6} %Line spans across columns 2 to 6
+($N_{schools}$) & 11 & 12 & 9 & 7 & 7 & 14 & 18 & 78 \\
+{\%} of Total & 14\% & 15\% & 12\% & 9\% & 9\% & 18\% & 25\% & \\ \bottomrule
+\end{tabular}\\
+\end{center}\\
