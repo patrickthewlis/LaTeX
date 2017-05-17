@@ -1,6 +1,7 @@
-Changing Page Margins for Individual Pages
+% Changing Page Margins for Individual Pages
 
-%Margins Environment - Used to change margins for individual pages
+% Define New Margins Environment - Used to change margins for individual pages
+
 \newenvironment{changemargin}[2]{%
   \begin{list}{}{%
     \setlength{\topsep}{0pt}%
@@ -12,8 +13,8 @@ Changing Page Margins for Individual Pages
   }%
   \item[]}{\end{list}}
   
-  % Example Code
+% Example_Code
   
   \begin{changemargin}{-2.3cm}{-2.3cm} % Increase to expand margins, decrease to narrow margins
-  
+  [...]
   \end{changemargin}
