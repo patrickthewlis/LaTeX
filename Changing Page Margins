@@ -1,0 +1,19 @@
+Changing Page Margins for Individual Pages
+
+%Margins Environment - Used to change margins for individual pages
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}}
+  
+  % Example Code
+  
+  \begin{changemargin}{-2.3cm}{-2.3cm} % Increase to expand margins, decrease to narrow margins
+  
+  \end{changemargin}
