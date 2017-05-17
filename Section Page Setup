@@ -1,0 +1,13 @@
+%Page setup
+
+\newpage
+\vspace*{\fill} 
+\hline \hline
+\vspace{1.5cm}
+{\scshape\LARGE United States  \par}
+\vspace{2cm}
+{\scshape\Large Sampling Methodology \& Final Selection of \\
+Clusters \par}
+\vspace{1.5cm}
+\hline \hline
+\vfill % Fill the rest of the vertical white blank space
