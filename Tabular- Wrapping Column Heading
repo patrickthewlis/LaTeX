@@ -1,0 +1,22 @@
+\begin{center}
+\begin{table}[!htbp] % Prevent table from floating to the next page
+\caption{Contact Mode per School. National Universities}
+\label{table11:Contact_Mode_Per_Type_of_School_2}\centering%
+\scriptsize
+ \begin{tabular}{lcccccccc} \toprule
+ 
+        \multicolumn{1}{p{2cm}}{\centering University \\ CC} & %p{2cm} will adjust the width for each column
+        \multicolumn{1}{p{2cm}}{\centering Mode \\ of Contact} & % \centering is used to center the column headings, as we have lost the {c} function
+        \multicolumn{1}{p{2cm}}{\centering Time of \\ Response} & 
+		\multicolumn{2}{p{2cm}}{\centering Primary Contact} & % Primary Contact
+		\multicolumn{1}{p{2cm}}{\centering No. Follow-Up \\ Emails} &
+		\multicolumn{2}{p{2cm}}{\centering Method of \\Circulation} & 
+		\multicolumn{1}{p{2cm}}{\centering Recruitment Post} &  \midrule
+		
+& & & MSA & Other & & Email & Facebook & \\	\cmidrule(r){4-5} \cmidrule(r){7-8} % Draw lines underneat "Primary Contact" and "Method"
+Email & 35 & [] & [] & [] & [] \\
+& & () & () & () & () \\ \bottomrule
+
+\end{tabular}
+\end{table}
+\end{center} 
