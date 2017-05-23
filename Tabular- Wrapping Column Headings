@@ -13,7 +13,7 @@
 		\multicolumn{2}{p{2cm}}{\centering Method of \\Circulation} & 
 		\multicolumn{1}{p{2cm}}{\centering Recruitment Post} &  \midrule
 		
-& & & MSA & Other & & Email & Facebook & \\	\cmidrule(r){4-5} \cmidrule(r){7-8} % Draw lines underneat "Primary Contact" and "Method"
+& & & MSA & Other & & Email & Facebook & \\	\cmidrule(r){4-5} \cmidrule(r){7-8} % Draw lines underneath "Primary Contact" and "Method"
 Email & 35 & [] & [] & [] & [] \\
 & & () & () & () & () \\ \bottomrule
 
