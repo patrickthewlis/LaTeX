@@ -1,0 +1,71 @@
+\documentclass[11pt, a4paper]{article}
+
+%--------------------------------------------------------------------------------------------------------------------------------------------
+% PACKAGES
+%--------------------------------------------------------------------------------------------------------------------------------------------
+%Tables-----------------------------
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{pdflscape}
+%Longtable
+\usepackage{longtable}
+\usepackage{multirow, multicol}
+%Booktabs
+\usepackage{booktabs} %- Booktabs packages can be used within the longtable environment
+%Fonts
+\usepackage[T1]{fontenc}
+\usepackage{color} %--Package used to input fill colour for ``substrata'' headings--%
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor} %-- Advanced Package for fill colours --%
+%References/Footnotes/Hyperlinks
+\usepackage{hyperref}
+\hypersetup{colorlinks,breaklinks,urlcolor=blue, linkcolor=blue}
+\usepackage{authblk}
+%Geometry
+\usepackage{afterpage} %Package used for setting margins/geometry of single pages i.e. wide tables
+\usepackage[a4paper, total={6.5in, 8.5in}]{geometry}
+%Lists/Items
+\usepackage{scrextend} %--Package used for more complex labelling environments--%
+\usepackage[inline]{enumitem} %--Package used for horinzontal inline listing when space is limited--%
+%Paragraph and Spacing
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{textcomp	} 	%--Package used to allow arrows in text mode--%
+%Maths Packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+%Textbox
+\usepackage[most]{tcolorbox}
+\usepackage{hang}
+---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
+
+----------------------
+   BEGIN DOCUMENT
+----------------------
+
+\begin{document}
+\title{}
+\author{} % Omit author
+\date{} % Omit date
+\maketitle \\
+\hline \hline
+\onehalfspacing
+
+% DOCUMENT HEADING
+\newpage
+\textsc{\textbf{author}: \textit{title}} \\
+\hline\hline
+\vspace{0.4cm}
+
+
+% NOTES
+\begin{description}[leftmargin=3.0em,style=nextline]
+\item
+\item
+\item
+\item 
+\item
+\end{description}
+\end{document}
