@@ -1,3 +1,11 @@
+% Sideways Table
+\usepackage{rotating}
+
+% Use tick/checkmark in tables
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+
 \begin{center}
 \begin{sidewaystable}
 \caption{Contact Mode per School. United Kingdom}
@@ -5,9 +13,9 @@
 \scriptsize
  \begin{tabular}{lcccccc} \toprule
  
-        \multicolumn{1}{p{2.3cm}}{\centering University} & 
-        \multicolumn{1}{p{1.5cm}}{\centering Type \\ of Society} & 
-        \multicolumn{1}{p{2cm}}{\centering First \\ Contact} & 
+        	    \multicolumn{1}{p{2.3cm}}{\centering University} & 
+                    \multicolumn{1}{p{1.5cm}}{\centering Type \\ of Society} & 
+                    \multicolumn{1}{p{2cm}}{\centering First \\ Contact} & 
 		    \multicolumn{1}{p{2cm}}{\centering First \\ Response} & % Primary Contact
 		    \multicolumn{1}{p{2cm}}{\centering Facebook Contact} &
 		    \multicolumn{1}{p{2cm}}{\centering No. Follow-Up \\ Emails} & 
