@@ -30,7 +30,7 @@
 \node (resarea) [abstract, rectangle split, rectangle split parts=2, below=0.2cm of node2, text justified] 
          {
                \textbf{Research Area}
-               \nodepart{second}General\newline Engineering\newline Business\newline Art and     Design\newline Agriculture\newline Medical
+               \nodepart{second}General\newline Engineering\newline Business\newline Art and Design\newline Agriculture\newline Medical
         };
         
          
@@ -50,7 +50,7 @@
 \node (resarea2) [abstract, rectangle split, rectangle split parts=2, below=0.2cm of node5, text justified] 
          {
                \textbf{Research Area}
-               \nodepart{second}General\newline Engineering\newline Business\newline Art and     Design\newline Agriculture\newline Medical
+               \nodepart{second}General\newline Engineering\newline Business\newline Art and Design\newline Agriculture\newline Medical
         };
         
 
