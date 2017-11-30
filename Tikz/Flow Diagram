@@ -1,0 +1,102 @@
+% Preamble
+
+
+% Create the type of nodes (i.e. textboxes) that we want to use.
+\tikzstyle{abstract}=[rectangle, draw=black, rounded corners, fill=cyan!20, drop shadow,
+        text centered, anchor=north, text=black, text width=3cm]
+\tikzstyle{comment}=[rectangle, draw=black, rounded corners, fill=red!30, drop shadow,
+        text centered, anchor=north, text=black, text width=1.5cm]
+        
+% Create the style of arrows we want to use        
+% If we want to specify the width of the box to be the size of the longest word we have, we can use: text width={width("High")},
+\tikzstyle{myarrow}=[->, >=open triangle 90, thick]
+\tikzstyle{line}=[-, thick]
+
+
+
+
+% Flow-Diagram
+
+\begin{center}
+\begin{tikzpicture} [node distance=1.75cm]
+
+\node[abstract] (strata1) {\textbf{Type of School}};
+
+\node (node1) [text width=3cm, below=of strata1] {};
+\node (public) [abstract, left=of node1] {Public};
+\node (private) [abstract, right=of node1] {Private};
+
+\node (node2) [text width=0.8cm, below=of public] {};
+\node (resarea) [abstract, rectangle split, rectangle split parts=2, below=0.2cm of node2, text justified] 
+         {
+               \textbf{Research Area}
+               \nodepart{second}General\newline Engineering\newline Business\newline Art and     Design\newline Agriculture\newline Medical
+        };
+        
+         
+\node (node3) [text width=0.8cm, below=of resarea] {};
+\node (rank) [abstract, below=0.2cm of node3] 
+        {
+               \textbf{Academic Rank}
+        };
+        
+\node (node4) [text width=0.5cm, below=of rank] {};
+\node (rank1) [comment, below=0.2cm of node4] {Mid};
+\node (rank2) [comment, left=0.3cm of rank1] {Low};
+\node (rank3) [comment, right=0.3cm of rank1] {High};
+
+
+\node (node5) [text width=0.8cm, below=of private] {};
+\node (resarea2) [abstract, rectangle split, rectangle split parts=2, below=0.2cm of node5, text justified] 
+         {
+               \textbf{Research Area}
+               \nodepart{second}General\newline Engineering\newline Business\newline Art and     Design\newline Agriculture\newline Medical
+        };
+        
+
+\node (node6) [text width=0.8cm, below=of resarea2] {};
+\node (ranking) [abstract, below=0.2cm of AuxNode06] 
+        {
+               \textbf{Academic Rank}
+        };
+        
+\node (node7) [text width=0.8cm, below=of ranking] {};
+\node (rank4) [comment, below=0.2cm of node7] {Mid};
+\node (rank5) [comment, left=0.3cm of rank4] {Low};
+\node (rank6) [comment, right=0.3cm of rank4] {High};
+
+
+
+% Draw Arrows
+
+% We use -- to draw the line
+% We use ++ to save the previous coordinate, so that we can draw our new line from this one
+% We use -| to denote "the path to" whatever comes after it.
+
+% We want our arrow to point down, and so the y-coordinate needs to be NEGATIVE
+
+% Arrow from Type of School to Public/Private
+\draw[myarrow] (strata1.south) -- ++(0,-0.8) -| (public.north);
+\draw[myarrow] (strata1.south) -- ++ (0,-0.8) -| (private.north);
+
+% Arrow from Public to Research Area
+\draw[myarrow] (public.south) -- ++ (0,-0.8) -| (resarea.north);
+\draw[myarrow] (private.south) -- ++ (0,-0.8) -| (resarea2.north);
+
+% Arrow from Research Area to Academic Ranking
+\draw[myarrow] (resarea.south) -- ++ (0,-0.8) -| (rank.north);
+\draw[myarrow] (resarea2.south) -- ++ (0,-0.8) -| (ranking.north);
+
+% Arrow from Academic Ranking to Individual Ranks
+
+\draw[myarrow] (rank.south) -- ++ (0,-0.8) -| (rank1.north);
+\draw[myarrow] (rank.south) -- ++ (0,-0.8) -| (rank2.north);
+\draw[myarrow] (rank.south) -- ++ (0,-0.8) -| (rank3.north);
+
+\draw[myarrow] (ranking.south) -- ++ (0,-0.8) -| (rank4.north);
+\draw[myarrow] (ranking.south) -- ++ (0,-0.8) -| (rank5.north);
+\draw[myarrow] (ranking.south) -- ++ (0,-0.8) -| (rank6.north);
+
+
+\end{tikzpicture}
+\end{center}
